@@ -340,9 +340,9 @@ const getDetailLines = () => {
             <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-        <div className="hero-image">
+        {/* <div className="hero-image">
           <img src="images/phone.png" alt="Téléphone" />
-        </div>
+        </div> */}
       </section>
 
       {/* CALCULATOR */}
@@ -374,11 +374,23 @@ const getDetailLines = () => {
 
     <div className="preview-content">
       <div className="file-name" id="fileName">{fileName}</div>
-
-      <span className="status-badge">
+<span className={`status-badge ${loading ? "loading" : "success"}`}>
+  {loading ? (
+    <>
+      <span className="spinner"></span>
+      Traitement en cours...
+    </>
+  ) : (
+    <>
+      <i className="fa-solid fa-circle-check"></i>
+      Image chargée
+    </>
+  )}
+</span>
+      {/* <span className="status-badge">
         <i className="fa-solid fa-circle-check"></i>
         {loading ? "Traitement en cours..." : "Image chargée"}
-      </span>
+      </span> */}
 
       <div className="extracted-data">
         <i className="fa-solid fa-wand-magic-sparkles"></i>
