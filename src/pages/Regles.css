@@ -1,0 +1,138 @@
+.regles-page {
+  min-height: 100vh;
+  background: #f8f8f8;
+  padding: 30px 20px 60px;
+}
+
+/* HERO */
+
+.regles-hero {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 50px 60px;
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    #e8e1ff 0%,
+    #d5ccff 30%,
+    #c6b8ff 60%,
+    #b09cff 85%,
+    #9b84ff 100%
+  );
+
+  box-shadow:
+    0 10px 30px rgba(155,132,255,.2),
+    0 0 60px rgba(232,225,255,.3);
+
+  text-align: center;
+}
+
+.regles-hero h1 {
+  color: #2d1b69;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.regles-hero p {
+  color: #4a3a7a;
+  font-size: 16px;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* SECTION */
+
+.regles-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.rule-card {
+  background: rgba(255,255,255,.95);
+  border: 1px solid #ece5ff;
+  border-radius: 24px;
+  padding: 28px;
+  margin-bottom: 25px;
+
+  box-shadow:
+    0 10px 25px rgba(143,92,255,.08);
+}
+
+.rule-card h2 {
+  color: #8f5cff;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.rule-card p {
+  color: #555;
+  line-height: 1.8;
+}
+
+/* FORMULE */
+
+.formula-box {
+  margin-top: 15px;
+  background: #f3eeff;
+  /* border-left: 5px solid #8f5cff; */
+  padding: 18px;
+  border-radius: 14px;
+
+  font-weight: 700;
+  color: #2d1b69;
+}
+
+/* LISTE */
+
+.rule-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.rule-list li {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+/* BOUTON RETOUR */
+
+.back-btn {
+  margin-top: 30px;
+  background: #8f5cff;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.back-btn:hover {
+  background: #7b47ff;
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px) {
+
+  .regles-hero {
+    padding: 35px 20px;
+  }
+
+  .regles-hero h1 {
+    font-size: 30px;
+  }
+
+  .rule-card {
+    padding: 20px;
+  }
+
+  .formula-box {
+    font-size: 14px;
+    overflow-x: auto;
+  }
+}
